@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#navbar {
+  width: 100%;
+  position: fixed;
+  background-color: #5F9EA0;
+  z-index: 1;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 1em;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: large;
+  margin: 1em;
+  color: white;
+}
+nav ul li a:hover,
+:active {
+  color: black;
+}
+#donate {
+  margin-top: 0.5em;
+  padding: 2em;
+  align-items: center;
+  background-color: #FFE4C4;
+}
+#donate h1 {
+  margin-bottom: 1em;
+}
+ .donate_btn {
+  width: 10em;
+  margin: auto;
+  background-color: rgb(255, 201, 23);
+  padding: 0.75em;
+  border-radius: 0.5em;
+  border: 2px solid rgb(255, 201, 23);
+}
+.donate_btn a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background-color: inherit;
+  font-size: large;
+  font-weight: 700;
+  padding: 0;
+  cursor: pointer;
+}
+#about {
+  padding: 0.25em;
+  margin-top: 1em;
+  font-size: large;
+  font-weight: 600;
+}
+.images {
+  display: flex;
+  flex-direction: row;
+  margin: 0.25em;
+}
+.images div {
+  margin: 0.5em;
+}
+#abt_content {
+  background: url(images/pexels-kindel-media-7298844.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  opacity: 0.95;
+  z-index: 0;
+}
+#activity {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+#contact {
+  margin-top: 0em;
+  background: black;
+  height: 10%;
+  padding: 1.5em;
+  color: rgba(133, 130, 130, 0.911);
+  font-weight: 200;
+}
+.icons {
+  font-size: medium;
+  margin: 0.5em;
+  color: white;
+}
+#return-to-top {
+  margin-top: 0em;
+  left: 95%;
+  position: fixed;
+  z-index: 1;
+  top: 90%;
+  border: 1px solid rgb(255, 201, 23);
+  padding: 1em;
+  border-radius: 0.4em;
+  background: rgb(255, 201, 23);
+  color: black;
+}
+.pay {
+  margin-top: 0em;
+  justify-content: center;
+  background: url("images/thank-you.jpg");
+  background-size: cover;
+}
+#rpay{
+  background: rgba(255, 0, 0, 0);
+}
+/* Media Querries */
+@media screen and (max-width: 600px) {
+  .images {
+    flex-direction: column;
+  }
+  nav ul li a {
+    font-size: small;
+  }
+  #return-to-top {
+    left: 85%;
+    padding: 0.75em;
+  }
+}
+/* Animations */
+.fa-beat {
+  animation: fa-beat 5s ease infinite;
+}
+@keyframes fa-beat {
+  0% {
+    transform: scale(1);
+  }
+  5% {
+    transform: scale(1.25);
+  }
+  20% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(1.25);
+  }
+  50% {
+    transform: scale(1);
+  }
+  55% {
+    transform: scale(1.25);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
